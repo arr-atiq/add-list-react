@@ -8,7 +8,7 @@ const AddingListTable = ({ addList, setAddList }) => {
     return (
         <div className="adding-list">
             <div className="card p-3">
-                <table className="table">
+                <table>
                     <thead>
                         <tr>
                             <th scope="col">Name</th>
