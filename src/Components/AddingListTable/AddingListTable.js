@@ -8,7 +8,7 @@ const AddingListTable = ({ addList, setAddList }) => {
     return (
         <div className="adding-list">
             <div className="card p-3">
-                <table>
+                <table className="table table-bordered">
                     <thead>
                         <tr>
                             <th scope="col">Name</th>
@@ -20,8 +20,8 @@ const AddingListTable = ({ addList, setAddList }) => {
                         addList.map(userData =>
                             <tbody>
                                 <tr>
-                                    <th>{userData.name}</th>
-                                    <th>{userData.email}</th>
+                                    <th>{userData.userInput.name}</th>
+                                    <th>{userData.userInput.email}</th>
                                     <th>
                                         <button onClick={()=> handleDelete(userData)} className="btn btn-danger">Delete</button>
                                     </th>
