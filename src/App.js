@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import MainContent from './Components/MainContent';
+import FormContent from './Components/FormContent/FormContent';
 
 const App = () => {
   return (
     <div>
-      <MainContent></MainContent>
+      <FormContent></FormContent>
     </div>
   );
 };
