@@ -2,6 +2,9 @@ import React from 'react';
 
 const AddingListTable = ({ addList, setAddList }) => {
 
+    const handleDelete = ({id}) =>{
+        setAddList(addList.filter(userData => userData.id !== id))
+    }
     return (
         <div className="adding-list">
             <div className="card p-3">
@@ -20,7 +23,7 @@ const AddingListTable = ({ addList, setAddList }) => {
                                     <th>{userData.name}</th>
                                     <th>{userData.email}</th>
                                     <th>
-                                        <button className="btn btn-danger">Delete</button>
+                                        <button onClick={()=> handleDelete(userData)} className="btn btn-danger">Delete</button>
                                     </th>
                                 </tr>
                             </tbody>)
